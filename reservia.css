@@ -1,0 +1,64 @@
+
+/* valeurs du bloc de la page */
+#blocpage
+{
+    margin: auto;
+    max-width: 1240px;
+}
+
+div
+{
+    display: block;
+}
+
+/* Header */
+.containerheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headernav
+{
+    display: flex;
+    margin-right: 0%;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+    padding: 0%;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+nav li
+{
+    margin-right: 20px;
+}
+
+a li
+{
+    border-top: blue;
+    padding: 20px;
+}
+
+.inscrire
+{
+    font-weight: bold;
+    color: #0065FC;
+    margin-right: 0%;
+    margin-left: 10px;
+}
+
+h1
+{
+    font-size: 30px;
+}
