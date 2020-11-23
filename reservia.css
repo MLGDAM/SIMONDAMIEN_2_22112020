@@ -1,3 +1,25 @@
+/* POLICE DE RESERVIA */
+@font-face
+{
+    font-family: 'Raleway-BlackItalic';
+    src: url('static/Raleway-BlackItalic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Raleway';
+    src: url('static/Raleway-Regular.ttf') format('truetype');
+}
+
+h1, h2,h3,h4,h5,h6, p, a {
+    font-family: 'Raleway';
+}
+
+h1
+{
+    font-family: 'Raleway-BlackItalic';
+    font-size: 30px;
+}
 
 /* valeurs du bloc de la page */
 #blocpage
