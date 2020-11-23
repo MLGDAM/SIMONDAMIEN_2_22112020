@@ -28,10 +28,6 @@ h1
     max-width: 1240px;
 }
 
-div
-{
-    display: block;
-}
 
 /* Header */
 .containerheader
@@ -55,12 +51,6 @@ nav ul
     padding: 0%;
 }
 
-a
-{
-    text-decoration: none;
-    color: black;
-}
-
 nav li
 {
     margin-right: 20px;
@@ -68,10 +58,22 @@ nav li
 
 a li
 {
-    border-top: blue;
-    padding: 20px;
+	border-top: transparent;
+	padding: 30px;
+
+}
+a li:hover
+{
+	color:#0065FC;
+	border-top: solid;
+	border-color:#0065FC;
 }
 
+a
+{
+	text-decoration:none;
+	color: black;
+}
 .inscrire
 {
     font-weight: bold;
@@ -80,7 +82,37 @@ a li
     margin-left: 10px;
 }
 
-h1
+.search
 {
-    font-size: 30px;
+    display: inline-flex;
+    margin-top: 15px;
+    align-items: center;
+}
+
+button {
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+.iconemap
+{
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+input
+{
+    padding: 5px;
+    margin-right: 15px;
+    border-radius: 5px;
+}  
+.filtres
+{
+    display: flex;
+}
+.info
+{
+    display: flex;
 }

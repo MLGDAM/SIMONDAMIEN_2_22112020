@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
         <link rel="stylesheet" href="reservia.css" />
         <script src="https://kit.fontawesome.com/3ee1cc3628.js" crossorigin="anonymous"></script>
         <title>RESERVIA</title>
@@ -19,7 +20,7 @@
                             <a href="#section1">
                                 <li>Hébergements</li>
                             </a>
-                            <a href="section3">
+                            <a href="#section3">
                                 <li>Activités</li>
                             </a>
                             <a href="#">
@@ -30,6 +31,35 @@
                 </div>
                     <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
                     <p>En plein centre ville ou en pleine nature</p>
+                    <div class="search">
+                       <div class="iconemap">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                       </div>
+                        
+                    <form method="post" action="traitement.php">
+                        <p>
+                    <input type="text" name="localisation" id="city" placeholder="Marseille,France">
+                        </p>
+                    </form>
+                    <button>
+                    <a class="boutonderecherche" href="#">Rechercher</a>
+                    </button>
+                    </div>
+
+                <div class="filtres">
+                   <h3>Filtres</h3>
+                   <span class="fas fa-money-bill-wave" aria-hidden="true">Economique</span>
+                   <span class="fas fa-child" aria-hidden="true">Familial</span>
+                   <span class="fas fa-heart" aria-hidden="true">Familial</span>
+                   <span class="fas fa-dog" aria-hidden="true">Animaux autorisés</span>
+                </div>
+
+                <div class="info">
+                    <span class="fas fa-info" aria-hidden="true"></span>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+
+                </div>
+
             </header>
          </div>
     </body>    
