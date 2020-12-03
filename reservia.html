@@ -1,66 +1,144 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" href="reservia.css" />
-        <script src="https://kit.fontawesome.com/3ee1cc3628.js" crossorigin="anonymous"></script>
-        <title>RESERVIA</title>
-    </head>
-    
-    <body>
-         <div id="blocpage">
-            <header>
-                <div class="containerheader">
-                    <div id="logo">
-                        <img class="Logohaut" src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="Reservia">
-                    </div>
-                    <nav class="headernav">
-                        <ul>
-                            <a href="#section1">
-                                <li>Hébergements</li>
-                            </a>
-                            <a href="#section3">
-                                <li>Activités</li>
-                            </a>
-                            <a href="#">
-                                <li class="inscrire">S'inscrire</li>
-                            </a>
-                        </ul>
-                    </nav> 
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="reservia.css" />
+    <script src="https://kit.fontawesome.com/3ee1cc3628.js" crossorigin="anonymous"></script>
+    <title>RESERVIA</title>
+</head>
+
+<body>
+    <div id="blocpage">
+        <header>
+            <div class="containerheader">
+                <div id="logo">
+                    <img class="Logohaut" src="images/logo/Reservia.svg" alt="Reservia">
                 </div>
-                    <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                    <div class="search">
-                       <div class="iconemap">
-                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                       </div>
-                        
-                    <form method="post" action="traitement.php">
-                        <p>
-                    <input type="text" name="localisation" id="city" placeholder="Marseille,France">
-                        </p>
-                    </form>
-                    <button>
+                <nav class="headernav">
+                    <ul>
+                        <a href="#section1">
+                            <li>Hébergements</li>
+                        </a>
+                        <a href="#section3">
+                            <li>Activités</li>
+                        </a>
+                        <a href="#">
+                            <li class="inscrire">S'inscrire</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+            <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div class="logosearch">
+                <div class="iconemap">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+
+                <form method="post" action="traitement.php">
+                    <p>
+                        <input type="text" name="localisation" id="city" placeholder="Marseille,France">
+                    </p>
+                </form>
+                <button>
                     <a class="boutonderecherche" href="#">Rechercher</a>
-                    </button>
+                </button>
+            </div>
+
+            <div class="filtres">
+                <h2 class="titrefiltres">Filtres</h2>
+                <div class="barreFiltre">
+                    <div class="imagefiltre">
+                        <i class="fas fa-money-bill-wave icons"></i>
                     </div>
-
-                <div class="filtres">
-                   <h3>Filtres</h3>
-                   <span class="fas fa-money-bill-wave" aria-hidden="true">Economique</span>
-                   <span class="fas fa-child" aria-hidden="true">Familial</span>
-                   <span class="fas fa-heart" aria-hidden="true">Familial</span>
-                   <span class="fas fa-dog" aria-hidden="true">Animaux autorisés</span>
+                    <span class="titre">Économique</span>
                 </div>
 
-                <div class="info">
-                    <span class="fas fa-info" aria-hidden="true"></span>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
 
+                <div class="barreFiltre">
+                    <div class="imagefiltre">
+                        <i class="fas fa-child icons"></i>
+                    </div>
+                    <span class="titre">Familial</span>
                 </div>
 
-            </header>
-         </div>
-    </body>    
+
+                <div class="barreFiltre">
+                    <div class="imagefiltre">
+                        <i class="fas fa-heart icons"></i>
+                    </div>
+                    <span class="titre">Romantique</span>
+                </div>
+
+
+                <div class="barreFiltre">
+                    <div class="imagefiltre">
+                        <i class="fas fa-dog icons"></i>
+                    </div>
+                    <span class="titre">Animaux autorisés</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <span class="fas fa-info" aria-hidden="true"></span>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </header>
+
+        <main class="hebergementetfamous">
+            <section id="Hébergements">
+                <article class="hébergementmarseille">
+                    <h2>Hébergements à Marseille</h2>
+                    <div class="hotel">
+                        <div class="choix">
+                            <a href="#">
+                                <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                                    alt="auberge la cannebière" class="hotelimage">
+                                <h3>Auberge la Cannebière </h3><br />
+                                <p>Nuit à partir de <strong>25€</strong></p><br />
+                                <div class="étoiles">
+                                    <i class="fas fa-star blue" aria-hidden="true"></i>
+                                    <i class="fas fa-star blue" aria-hidden="true"></i>
+                                    <i class="fas fa-star blue" aria-hidden="true"></i>
+                                    <i class="fas fa-star blue" aria-hidden="true"></i>
+                                    <i class="fas fa-star grey" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <h2>Hébergement 2</h2>
+            </section>
+        </main>
+
+        
+        <footer>
+            <div class="blockFooter">
+                <div class="interieurblockFooter">
+                    <h3 class="footerTitre">A propos</h3>
+                    <a href="#" class="lignesFooter">Fonctionnement du site</a>
+                    <a href="#" class="lignesFooter">Conditions générales de vente</a>
+                    <a href="#" class="lignesFooter">Données et confidentialités</a>
+                </div>
+                <div class="interieurblockFooter">
+                    <h3 class="footerTitre">Nos hébergements</h3>
+                    <a href="#" class="lignesFooter">Charte qualité</a>
+                    <a href="#" class="lignesFooter">Soumettre votre hôtel</a>
+                </div>
+                <div class="interieurblockFooter">
+                    <h3 class="footerTitre">Assistance</h3>
+                    <a href="#" class="lignesFooter">Centre d'aide</a>
+                    <a href="#" class="lignesFooter">Nous contacter</a>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
 </html>

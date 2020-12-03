@@ -1,24 +1,28 @@
-/* POLICE DE RESERVIA */
-@font-face
-{
-    font-family: 'Raleway-BlackItalic';
-    src: url('static/Raleway-BlackItalic.ttf') format('truetype');
-}
-
-@font-face
-{
+/* Paramètres généraux */
+@font-face {
     font-family: 'Raleway';
-    src: url('static/Raleway-Regular.ttf') format('truetype');
+    src: url('static/Raleway-Regular.ttf');
 }
+@font-face {
+    font-family: 'Raleway-thin';
+    src: url('static/Raleway-Thin.ttf');
+}   
 
-h1, h2,h3,h4,h5,h6, p, a {
+h1, h2,h3,h4,h5,h6, a {
     font-family: 'Raleway';
+    font-weight: bold;
 }
 
-h1
+p
 {
-    font-family: 'Raleway-BlackItalic';
-    font-size: 30px;
+    font-family: 'Raleway-Thin';   
+}
+
+h2
+{
+    /*font-family: 'Raleway-Semibold';*/
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* valeurs du bloc de la page */
@@ -26,6 +30,7 @@ h1
 {
     margin: auto;
     max-width: 1240px;
+    padding: 40px;
 }
 
 
@@ -66,13 +71,13 @@ a li:hover
 {
 	color:#0065FC;
 	border-top: solid;
-	border-color:#0065FC;
+    border-color:#0065FC;
 }
 
 a
 {
 	text-decoration:none;
-	color: black;
+    color: #0065FC;
 }
 .inscrire
 {
@@ -82,7 +87,9 @@ a
     margin-left: 10px;
 }
 
-.search
+/* formulaire de recherche*/
+
+.logosearch
 {
     display: inline-flex;
     margin-top: 15px;
@@ -92,27 +99,157 @@ a
 button {
     background-color: #0065FC;
     border: none;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 15px;
+    padding: 15px 15px;
+    border-radius: 0px 10px 10px 0px;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1em;
+    cursor: pointer;
+
 }
 .iconemap
 {
-    margin-right: 10px;
     font-size: 25px;
+    background-color: #F2F2F2;
+    border-radius: 1rem 0 0 1rem;
+    padding: 10px 10px;
+    width: 30px;
+    text-align: center;
 }
 
 input
 {
-    padding: 5px;
-    margin-right: 15px;
+    padding: 10px;
     border-radius: 5px;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 0 1.5em;
+    width: 60%;
+    height: 50px;
+    font-size: 15PX;
 }  
-.filtres
+
+.boutonderecherche
 {
-    display: flex;
+    color: white;
 }
+
+/* Mise en forme des filtres*/
+
+.titrefiltres
+{
+    font-size: 1.3em;
+    margin: 0 20px 0 0;
+}
+
+.titre {
+    font-family: "Raleway", "Sans serif";
+    font-weight: bold;
+    padding-right: 1.5em;
+    padding-left: 0.5em;
+}
+
+.barreFiltre {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-right: 2em;
+    border: 2px solid #d9d9d9;
+    border-radius: 2em;
+    font-weight: bold;
+}
+
+.filtres {
+    display: flex;
+    align-items: center;
+}
+.imagefiltre
+{
+    padding: 15px 15px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+}
+.fas 
+{
+    color: #0065FC;
+}
+.fa-map-marker-alt {
+    color: black;
+}
+/* ligne information */
 .info
-{
-    display: flex;
+ {
+  display: flex;
 }
+
+.fa-info {
+
+text-align: center;
+color: #0065FC;
+border-radius: 50%;
+border: solid 1px #d9d9d9;
+width: 30px;
+ padding: 12px;
+}  
+
+/* Mise en forme de la section hébergement*/
+.hébergementmarseille
+{
+    
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 67%;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.famous
+{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 30%;
+}
+
+.hotel img {
+    width: 100%;
+}
+
+.hebergementetfamous
+{
+    
+    display:flex;
+   padding: 50px 0;
+}
+
+/* footer */
+
+footer {
+    background-color: #F2F2F2;
+    
+ }
+.blockFooter {
+    display: flex;
+    max-width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.interieurblockFooter {
+    width: 40%;
+}
+.footerTitre {
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.lignesFooter {
+    color: black;
+    display: block;
+    margin: 15px 0;
+}
+/* fin footer */
