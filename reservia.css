@@ -48,6 +48,10 @@ h2 {
   display: flex;
   margin-right: 0%;
 }
+.Logohaut
+{
+  cursor: pointer;
+}
 
 nav ul {
   list-style-type: none;
@@ -71,7 +75,7 @@ a li:hover {
 
 a {
   text-decoration: none;
-  color: #0065fc;
+  color: black
 }
 .inscrire {
   font-weight: bold;
@@ -139,6 +143,7 @@ input {
   font-weight: bold;
   padding-right: 1.5em;
   padding-left: 0.5em;
+  cursor: pointer;
 }
 
 .barreFiltre {
@@ -159,6 +164,7 @@ input {
   padding: 15px 15px;
   border-radius: 50%;
   background-color: #d9d9d9;
+  cursor: pointer;
 }
 .fas {
   color: #0065fc;
@@ -186,15 +192,15 @@ input {
 }
 
 /* Mise en forme de la section hébergement*/
-.hebergementetfamous {
+.hebergementetpop {
   display: flex;
-  margin: 25px 0 0 0;
+  margin: 25px 0 50px;
 }
 
 #Hebergements {
   background-color: #f2f2f2;
   border-radius: 15px;
-  width: 67%;
+  width: 62%;
   padding: 20px;
   margin: 0 25px 0 0;
 }
@@ -212,31 +218,58 @@ input {
   padding: 5px;
   box-sizing: border-box;
   margin: 0 5px 20px 5px;
+  box-shadow: 0 5px 16px #0000002e;
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
 }
+.hotel:hover
+{
+  -webkit-transform:scale(1.25); /* Safari et Chrome */
+-moz-transform:scale(1.25); /* Firefox */
+-ms-transform:scale(1.25); /* Internet Explorer 9 */
+-o-transform:scale(1.25); /* Opera */
+transform:scale(1.25);
+}
+
 
 .hotel img {
   background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 5px 16px #0000002e;
+  border-radius: 15px 15px 0px 0px;
   transition-duration: 0.1s;
   cursor: pointer;
   width: 100%;
   height: 120px;
 }
-
+.hotel p 
+{
+  margin: 5px 10px
+}
+.hotel h3
+{
+  margin: 3px 10px
+}
+.etoiles
+{
+  margin: 3px 10px
+} 
 .main {
   display: flex;
 }
 
 .afficherplus {
   color: black;
+  padding-left: 8px;
 }
 
 /*Hébergements les plus populaires*/
 #pluspopulaires {
   background-color: #f2f2f2;
   border-radius: 15px;
-  width: 27%;
+  width: 32%;
   padding: 20px;
   display: flex;
 }
@@ -250,99 +283,119 @@ input {
   box-sizing: border-box;
   margin: 0px 0px 20px 0px;
   height: 145px;
+  box-shadow: 0 5px 16px #0000002e;
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
 }
+
+  .hotelpop:hover 
+  {
+    /* L'image est grossie de 25% */
+-webkit-transform:scale(1.25); /* Safari et Chrome */
+-moz-transform:scale(1.25); /* Firefox */
+-ms-transform:scale(1.25); /* Internet Explorer 9 */
+-o-transform:scale(1.25); /* Opera */
+transform:scale(1.25);
+  }
 .popimage {
   background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 5px 16px #0000002e;
   transition-duration: 0.1s;
   cursor: pointer;
   float: left;
   width: 45%;
-  height: 90%;
+  height: 92%;
   border-radius: 15px 0 0 15px;
-  margin: 5px 10px 5px 0px;
+  margin:2px 10px 2px 0px
 }
+.fa-chart-line:before {
+  content: "\f201";
+  MARGIN-LEFT: 165PX;
+  COLOR: BLACK;
+}
+.grey {
+  color: lightgrey;
+} 
 
+.hotelpop h3
+{
+  margin: 7px
+}
+.hotelpop p 
+{
+  margin: 0px
+}
+.etoilespop
+{
+  margin: 30px
+} 
 /*Section Activité*/
 #Activite {
   width: 80%;
 }
-.blocActivites {
+.containerActivites {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
   justify-content: space-between;
   height: 496px;
-  margin-right: 90px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 100px;
   box-sizing: border-box;
 }
-.activitestitre {
+.blocActivite {
+  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+  -webkit-transition: all 1s ease; /* Safari et Chrome */
+  -moz-transition: all 1s ease; /* Firefox */
+  -ms-transition: all 1s ease; /* Internet Explorer 9 */
+  -o-transition: all 1s ease; /* Opera */
+  transition: all 1s ease;
+  width: 23%;
+}
+
+.Activite {
+  background-color: white;
+  border-radius: 1.25rem;
+  box-shadow: 0 0 16px #0000002e;
+}
+
+.Activite:hover
+{
+  /* L'image est grossie de 25% */
+  -webkit-transform:scale(1.25); /* Safari et Chrome */
+  -moz-transform:scale(1.25); /* Firefox */
+  -ms-transform:scale(1.25); /* Internet Explorer 9 */
+  -o-transform:scale(1.25); /* Opera */
+  transform:scale(1.25);
+  cursor: pointer;
+}
+.titresection {
   color: black;
   font-size: 1.3em;
-  padding-top: 50px;
+  padding-left: 8px;
 }
-.Activite1 {
-  background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002e;
-}
-.activite1et4img {
-  width: 300px;
-  height: 440px;
+
+.Activite img {
+  width: 100%;
   object-fit: cover;
   border-radius: 1.25rem 1.25rem 0 0;
 }
-.Activite2 {
-  background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002e;
-  margin: 0 25px;
+
+.activite1et4img {
+  height: 440px;
 }
 .activite2img {
-  width: 300px;
   height: 200px;
-  object-fit: cover;
-  border-radius: 1.25rem 1.25rem 0 0;
-}
-.Activite3 {
-  background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002e;
-  margin: 0 25px;
 }
 .activite3img {
-  width: 300px;
   height: 110px;
-  object-fit: cover;
-  border-radius: 1.25rem 1.25rem 0 0;
-}
-.Activite4 {
-  background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002e;
-  margin: 0 25px;
-}
-.Activite5 {
-  background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002e;
-  margin: 0 25px;
 }
 .activite5img {
-  width: 300px;
   height: 140px;
-  object-fit: cover;
-  border-radius: 1.25rem 1.25rem 0 0;
-}
-.Activite6 {
-  background-color: white;
-  border-radius: 1.25rem;
-  box-shadow: 0 0 16px #0000002e;
-  margin: 0 25px;
 }
 .activite6img {
   width: 300px;
@@ -378,3 +431,30 @@ footer {
   margin: 15px 0;
 }
 /* fin footer */
+
+/*RESPONSIVE*/
+
+@media(min-width: 768px) and (max-width: 1388px) /*tablette*/{
+  #blocpage
+  {
+    width: 100%;
+  }
+  .containerheader{
+    margin: 0% 50%;
+  }
+  .subtext{
+  margin 0 50%;
+  }
+  .logosearch
+  {
+    width : 100%;
+    margin: 0 50%
+  }
+  .info
+  {
+    margin: 0 50%
+  }
+  
+  }
+  @media(max-width: 767px) /*smartphone*/
+  {}
