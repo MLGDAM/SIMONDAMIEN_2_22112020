@@ -348,12 +348,6 @@ transform:scale(1.25);
   box-sizing: border-box;
 }
 .blocActivite {
-  /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
-  -webkit-transition: all 1s ease; /* Safari et Chrome */
-  -moz-transition: all 1s ease; /* Firefox */
-  -ms-transition: all 1s ease; /* Internet Explorer 9 */
-  -o-transition: all 1s ease; /* Opera */
-  transition: all 1s ease;
   width: 23%;
 }
 
@@ -366,11 +360,11 @@ transform:scale(1.25);
 .Activite:hover
 {
   /* L'image est grossie de 25% */
-  -webkit-transform:scale(1.25); /* Safari et Chrome */
-  -moz-transform:scale(1.25); /* Firefox */
-  -ms-transform:scale(1.25); /* Internet Explorer 9 */
-  -o-transform:scale(1.25); /* Opera */
-  transform:scale(1.25);
+  -webkit-transform:scale(1.15); /* Safari et Chrome */
+  -moz-transform:scale(1.15); /* Firefox */
+  -ms-transform:scale(1.15); /* Internet Explorer 9 */
+  -o-transform:scale(1.15); /* Opera */
+  transform:scale(1.15);
   cursor: pointer;
 }
 .titresection {
@@ -398,14 +392,20 @@ transform:scale(1.25);
   height: 140px;
 }
 .activite6img {
-  width: 300px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 1.25rem 1.25rem 0 0;
+  height: 140px;
 }
 .nomactivite {
-  margin: 5px 0 0 15px;
+
+  padding: 0 0px 5px 20px;
 }
+.Activite2
+{
+  margin: 0px 0px 70px;
+}
+.Activite5{
+  margin: 0px 0px 100px;
+}
+
 /* footer */
 
 footer {
@@ -434,27 +434,217 @@ footer {
 
 /*RESPONSIVE*/
 
-@media(min-width: 768px) and (max-width: 1388px) /*tablette*/{
+@media(min-width: 320px) and (max-width: 767px) /* smartphones */
+{
+  h2 {
+    /*font-family: 'Raleway-Semibold';*/
+    font-size: 20px;
+    font-weight: bold;
+  }
+  H3{
+    font-size:16PX
+  }
+  body {
+    MARGIN: 0;
+    WIDTH: 1;
+    WIDTH: 100%;
+  }
   #blocpage
   {
-    width: 100%;
+    padding:2%;
+    overflow: hidden;
   }
-  .containerheader{
-    margin: 0% 50%;
+  .containerheader
+  {
+    display: grid;
+    padding-top: 5px;
   }
-  .subtext{
-  margin 0 50%;
+  .inscrire
+  {
+    POSITION: ABSOLUTE;
+    TOP: 5PX;
+    RIGHT: 5PX;
   }
+  header
+  {
+      margin: 0;
+      width: 100%;
+      padding-left: 5px;
+  }  
+  .boutonderecherche
+  {
+    <i class="fas fa-search"></i>
+  } 
+.filtres
+{
+  display: grid;
+}
+.titrefiltres 
+{
+  margin-bottom: 10px;
+}
+.barreFiltre
+{
+  width: 50%;
+  margin-bottom: 10px;
+}
+.fam 
+{
+  position: absolute;
+  margin: 34px 0 0 55%;
+  WIDTH: 35%;
+}
+.subtext h2
+{
+
+}
+.hebergementetpop
+{
+  display: flex;
+  flex-direction: column;
+}
+#Hebergements
+{
+  width: 100%;
+  background-color: white;
+  order: 2;
+  width: 100%;
+  margin: 0%;
+  padding: 0;
+}
+.hebergementmarseille
+{
+  display: flex;
+  flex-direction: column;
+}
+.hotel
+{
+  width: 95%;
+    HEIGHT: 210PX;
+}
+.hotelpop
+{
+  width: 95%;
+  padding: 5px;
+  MARGIN: 8PX;
+}
+#pluspopulaires
+{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  order: 1;
+}
+.fa-chart-line:before {
+    POSITION: relative;
+    MARGIN-LEFT: 120PX;
+}
+.containerActivites
+{
+  display: grid;
+  height: auto;
+  margin-bottom: 35px;
+}
+.blocActivite
+{
+  width: auto;
+}
+.Activite img {
+  width: 100%;
+  height: 100px;
+}
+.Activite
+{
+  margin-bottom: 30%;
+  height: 70PX;
+}
+.blockFooter
+{
+  display: grid;
+}
+.interieurblockFooter
+{
+  width: auto;
+}
+
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px) /*tablette*/
+{
+  .subtext
+  {
+    text-align: center;
+  }
+  /*FORMULAIRE DE RECHERCHE*/
   .logosearch
   {
-    width : 100%;
-    margin: 0 50%
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /*FILTRES*/
+  .filtres
+  {
+    align-items: center;
+    width: 100%;
+  }
+  .titre{
+    FONT-SIZE: 12PX;
+  }
+  .barreFiltre
+  {
+    width: 18%;
   }
   .info
   {
-    margin: 0 50%
+    ALIGN-ITEMS: CENTER;
+    PADDING: 0 15%;
   }
+#Hebergements{
+  width: 100%;
+  /*centré dans l'élément parent*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+  .hebergementetpop {
+    margin: 25px 0 50px;
+    DISPLAY: FLEX;
+    FLEX-DIRECTION: column;
+}
+#pluspopulaires{
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+.titresection
+{
+  text-align: center;
+  padding-bottom: 5px;
+}
+.fa-chart-line:before {
+  margin: 0px 0px 0px 10px;
   
   }
-  @media(max-width: 767px) /*smartphone*/
-  {}
+  @media(min-width: 200px) and (max-width: 767px) /* smartphones */
+{
+  body 
+  {
+  width: 100%;
+  padding-top: 15px;
+  }
+  header
+  {
+      display: flex;
+      margin: 0;
+      width: 100%;
+  }   
+
+.subtext,.logosearch
+{
+  margin: 15px;
+} 
+}
