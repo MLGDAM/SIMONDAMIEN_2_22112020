@@ -449,14 +449,7 @@ footer {
     font-size:16PX
   }
   body {
-    MARGIN: 0;
-    WIDTH: 1;
-    WIDTH: 100%;
-  }
-  #blocpage
-  {
-    padding:2%;
-    overflow: hidden;
+    margin: 0;
   }
   .containerheader
   {
@@ -577,11 +570,6 @@ li {
 
 @media(min-width: 768px) and (max-width: 1024px) /*tablette*/
 {
-  #blocpage
-  {
-    WIDTH: 100%;
-    margin: 0 5% 0 8%;
-  }
   .subtext
   {
     text-align: center;
@@ -614,7 +602,6 @@ li {
   {
     ALIGN-ITEMS: CENTER;
     position: relative;
-    left: 25%;
   }
 #Hebergements{
   width: 100%;
