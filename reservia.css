@@ -20,7 +20,7 @@ a {
 }
 
 p {
-  font-family: "Raleway-Thin";
+  font-family: "Raleway";
 }
 
 h2 {
@@ -32,7 +32,7 @@ h2 {
 /* valeurs du bloc de la page */
 #blocpage {
   margin: auto;
-  padding: 40px;
+  padding: 10px;
 }
 
 /* Header */
@@ -133,6 +133,15 @@ input {
 .boutonderecherche {
   color: white;
 }
+.loupelogo
+{
+  border-radius: 0px 15px 15px 0px;
+}
+
+.loupelogo i{
+  display : none
+}
+
 
 /* Mise en forme des filtres*/
 
@@ -148,7 +157,13 @@ input {
   padding-left: 0.5em;
   cursor: pointer;
 }
-
+.barreFiltre:hover
+{
+  background: #0065FC;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
 .barreFiltre {
   display: flex;
   align-items: center;
@@ -163,6 +178,7 @@ input {
   display: flex;
   align-items: center;
 }
+
 .imagefiltre {
   padding: 15px 15px;
   border-radius: 50%;
@@ -246,10 +262,12 @@ transform:scale(1.25);
   cursor: pointer;
   width: 100%;
   height: 120px;
+  object-fit: cover;
 }
 .hotel p 
 {
-  margin: 5px 10px
+  margin: 5px 10px;
+  font-weight: 100;
 }
 .hotel h3
 {
@@ -275,6 +293,10 @@ transform:scale(1.25);
   width: 32%;
   padding: 20px;
   display: flex;
+}
+.hebergementspop
+{
+  position: relative;
 }
 
 .hotelpop {
@@ -317,8 +339,10 @@ transform:scale(1.25);
 }
 .fa-chart-line:before {
   content: "\f201";
-  MARGIN-LEFT: 165PX;
-  COLOR: BLACK;
+  position: absolute;
+    right: 5px;
+    top: 21px;
+    color: black;
 }
 .grey {
   color: lightgrey;
@@ -330,7 +354,8 @@ transform:scale(1.25);
 }
 .hotelpop p 
 {
-  margin: 0px
+  margin: 0px;
+  font-weight: 100;
 }
 .etoilespop
 {
@@ -404,10 +429,10 @@ transform:scale(1.25);
 }
 .Activite2
 {
-  margin: 0px 0px 70px;
+  margin: 0px 0px 61px;
 }
 .Activite5{
-  margin: 0px 0px 100px;
+  margin: 0px 0px 92px;
 }
 
 /* footer */
@@ -433,12 +458,13 @@ footer {
   color: black;
   display: block;
   margin: 15px 0;
+  font-weight: 500;
 }
 /* fin footer */
 
 /*RESPONSIVE*/
 
-@media(min-width: 320px) and (max-width: 767px) /* smartphones */
+@media(min-width: 300px) and (max-width: 767px) /* smartphones */
 {
   h2 {
     /*font-family: 'Raleway-Semibold';*/
@@ -476,6 +502,20 @@ footer {
 li {
   text-align: center;
   flex-basis: 50%;
+}
+a li:hover {
+  color: #0065fc;
+  border-top: none;
+  border-color: #0065fc;
+  border-bottom: solid;
+}
+.loupelogo i {
+
+  display: inline;
+  color: white;
+}
+.boutonderecherche{
+  display: none;
 }
 .filtres
 {
@@ -519,12 +559,15 @@ li {
 {
   width: 95%;
     HEIGHT: 210PX;
+    font-size: 14px;
 }
+
 .hotelpop
 {
   width: 95%;
   padding: 5px;
   MARGIN: 8PX;
+  font-size: 14px;
 }
 #pluspopulaires
 {
@@ -532,10 +575,6 @@ li {
   margin: 0;
   padding: 0;
   order: 1;
-}
-.fa-chart-line:before {
-    POSITION: relative;
-    MARGIN-LEFT: 120PX;
 }
 .containerActivites
 {
@@ -627,7 +666,4 @@ li {
   text-align: center;
   padding-bottom: 5px;
 }
-.fa-chart-line:before {
-  margin: 0px 0px 0px 10px;
-  
-  }
+}
