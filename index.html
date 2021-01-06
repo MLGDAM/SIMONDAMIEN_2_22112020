@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +7,11 @@
     <script src="https://kit.fontawesome.com/3ee1cc3628.js" crossorigin="anonymous"></script>
     <title>RESERVIA</title>
 </head>
-
 <body>
     <div id="blocpage">
+
+        <!--------------HEADER/ PARTIE MENU NAVIGATION-------------->
+
         <header>
             <div class="containerheader">
                 <div id="logo">
@@ -30,6 +31,9 @@
                     </ul>
                 </nav>
             </div>
+
+            <!--HEADER/ TEXTE D'ACCROCHE ET FORMULAIRE DE RECHERCHE-->
+
             <div class="subtext">
                 <h2>Trouvez votre hébergement pour des vacances de rêves</h2>
                 <p>En plein centre ville ou en pleine nature</p>
@@ -38,7 +42,6 @@
                 <div class="iconemap">
                     <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                 </div>
-
                 <form method="post" action="traitement.php">
                     <p>
                         <input type="text" name="localisation" id="city" placeholder="Marseille,France">
@@ -50,6 +53,8 @@
                 </button>
             </div>
 
+            <!--HEADER/ FILTRES-->
+
             <div class="filtres">
                 <h2 class="titrefiltres">Filtres</h2>
                 <div class="barreFiltre">
@@ -58,24 +63,18 @@
                     </div>
                     <span class="titre">Économique</span>
                 </div>
-
-
                 <div class="barreFiltre fam">
                     <div class="imagefiltre">
                         <i class="fas fa-child icons"></i>
                     </div>
                     <span class="titre">Familial</span>
                 </div>
-
-
                 <div class="barreFiltre">
                     <div class="imagefiltre">
                         <i class="fas fa-heart icons"></i>
                     </div>
                     <span class="titre">Romantique</span>
                 </div>
-
-
                 <div class="barreFiltre">
                     <div class="imagefiltre">
                         <i class="fas fa-dog icons"></i>
@@ -84,11 +83,15 @@
                 </div>
             </div>
 
+            <!--HEADER/ INFORMATION-->
+
             <div class="info">
                 <span class="fas fa-info" aria-hidden="true"></span>
                 <p class="infotext">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </header>
+
+        <!--CORPS PRINCIPAL DE LA PAGE/ PARTIE HEBERGEMENT-->
 
         <main class="hebergementetpop">
             <section id="Hebergements">
@@ -188,6 +191,8 @@
                     <a href="+" class="afficherplus">Afficher plus</a>                     
                 </article>
             </section>
+
+            <!-- CORPS PRINCIPAL DE LA PAGE/ PARTIE HEBERGEMENTS POPULAIRES-->
     
             <section id="pluspopulaires">
                 <article class="hebergementspop">
@@ -245,6 +250,8 @@
             </section>
         </main>
 
+        <!-- CORPS SECONDAIRE DE LA PAGE/ PARTIE ACTIVITES-->
+
         <section id="Activites">
             <h2 class="titresection" id="ancreActivites">Activités à Marseille</h2>
             <div class="containerActivites">
@@ -301,7 +308,10 @@
                     </div>
                 </div>
             </div>
-        </section> 
+        </section>
+        
+        <!--FOOTER-->
+
         <footer>
             <div class="blockFooter">
                 <div class="interieurblockFooter">
@@ -322,9 +332,6 @@
                 </div>
             </div>
         </footer>
-
     </div>
-
 </body>
-
 </html>
