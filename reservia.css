@@ -44,43 +44,57 @@ p {
 
 .headernav {
   display: flex;
-  margin-right: 0%;
+  margin-right: 3%;
 }
 .Logohaut
 {
   cursor: pointer;
 }
 
-nav ul {
-  list-style-type: none;
+header ul {
   display: flex;
-  padding: 0%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  color: #0065FC; 
 }
 
-nav li {
-  margin-right: 20px;
+header ul li a:hover {
+  border-top: 2px solid #0065FC;
+  padding-top: 31px;
 }
 
-a li {
-  border-top: transparent;
-  padding: 30px;
+
+header ul li {
+  margin-left: 2rem;
 }
-a li:hover {
-  color: #0065fc;
-  border-top: solid;
-  border-color: #0065fc;
+
+
+header ul li a:hover {
+  color: #0065FC;
 }
 
 a {
   text-decoration: none;
   color: black
 }
-.inscrire {
-  font-weight: bold;
+
+.inscrire a {
+  
   color: #0065fc;
   margin-right: 0%;
-  margin-left: 10px;
 }
+
+.inscrire a:hover{
+  border-top: 2px solid #0065FC;
+  padding-top: 31px; 
+}
+
+.inscrire{
+  padding-left: 28px;
+}
+
 
 /* le texte d'accroche */
 
@@ -133,7 +147,12 @@ input {
 }
 
 .boutonderecherche {
-  color: white;
+    border: solid;
+    border-radius: 0px 18px 18px 0;
+    padding: 15px;
+    background-color: #0065FC;
+    color: white;
+    margin-left: -47px;
 }
 .loupelogo
 {
@@ -350,8 +369,8 @@ transform:scale(1.15);
 .fa-chart-line:before {
   content: "\f201";
   position: absolute;
-    right: 5px;
-    top: 21px;
+    right: 43px;
+    margin-top: -17px;
     color: black;
 }
 .grey {
@@ -512,24 +531,29 @@ footer {
   .inscrire
   {
     POSITION: ABSOLUTE;
-    TOP: 5PX;
-    RIGHT: 5PX;
+    TOP: 32PX;
+    RIGHT: 30PX;
   }
-  
+ 
+  nav
+  {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+  }
   nav ul {
-    padding: 0;
+
     border-bottom: 2px solid #F2F2F2;
     width: 100%;
+    padding-bottom: 5px;
 }
-li {
-  text-align: center;
-  flex-basis: 50%;
-}
-a li:hover {
-  color: #0065fc;
+
+header ul li a:hover {
+  border-bottom: 2px solid #0065FC;
   border-top: none;
-  border-color: #0065fc;
-  border-bottom: solid;
+  padding-bottom: 5px;
+  
 }
 
 /* PARAMETRES DU DISPLAY BOUTON LOUPE */
@@ -538,6 +562,11 @@ a li:hover {
 
   display: inline;
   color: white;
+  background-color: #0065FC;
+  padding: 18px;
+  border-radius: 18px;
+  border-left: -47px;
+  margin: -51px;
 }
 .boutonderecherche{
   display: none;
@@ -564,7 +593,6 @@ a li:hover {
   margin: 34px 0 0 55%;
   WIDTH: 35%;
 }
-
 /* HEBERGEMENTS ET POPULAIRES */
 
 .hebergementetpop
@@ -612,6 +640,7 @@ a li:hover {
   margin: 0;
   padding: 0;
   order: 1;
+  display: grid;
 }
 
 /* PARAMETRES ACTIVITES */
@@ -727,6 +756,14 @@ padding: 8px 0px 5px 20px;
   position: relative;
   left: 50%;
   transform: translateX(-50%); 
+  display: grid;
 }
 
+}
+
+@media(min-width: 1025px) and (max-width: 1600px) /* GRAND ECRAN */
+{
+  #pluspopulaires{
+    display: grid;
+  }
 }
