@@ -39,11 +39,11 @@ Second projet de la formation "Développeur web" chez OpenClassroom. L'objectif 
 
 La maquette a été délimité  en différentes parties via les balises sémantiques afin de structurer la page (des notes additionnelles sont disponible aussi bien dans le HTML que dans le CSS afin de faciliter la lecture).
 
-**1** Les balises de délimitations de zone dans une page :
+**1)** Les balises de délimitations de zone dans une page :
 
 L'entête du site avec HEADER, le menu de navigation avec NAV, le contenu principal avec MAIN, les contenu indépendants avec ARTICLES, les balises SECTION pour un découpage plus précis, le pied de page avec FOOTER.
 
-**2** les balises de balisage de contenu :
+**2)** les balises de balisage de contenu :
 
 Les balises standards comme les balises P, A, UL, STRONG etc…
 
