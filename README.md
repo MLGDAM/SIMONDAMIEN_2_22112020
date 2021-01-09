@@ -45,7 +45,7 @@ L'entête du site avec HEADER, le menu de navigation avec NAV, le contenu princi
 
 **2** les balises de balisage de contenu :
 
-Les balises standards comme les balises <p>, <a>, <ul>, <strong> etc…
+Les balises standards comme les balises P, A, UL, STRONG etc…
 
 
 Enfin, le responsive a été intégré directement dans le fichier CSS "reservia.css"
