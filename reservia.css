@@ -28,7 +28,6 @@ p {
 
 #blocpage {
   margin: auto;
-  padding: 10px;
 }
 
 /* PARAMETRES DU HEADER */
@@ -62,17 +61,13 @@ header ul {
 
 header ul li a:hover {
   border-top: 2px solid #0065FC;
-  padding-top: 31px;
+  padding-top: 21px;
+  color: #0065FC;
 }
 
 
 header ul li {
-  margin-left: 2rem;
-}
-
-
-header ul li a:hover {
-  color: #0065FC;
+  margin-left: 28px;
 }
 
 a {
@@ -88,7 +83,8 @@ a {
 
 .inscrire a:hover{
   border-top: 2px solid #0065FC;
-  padding-top: 31px; 
+  padding-top: 21px; 
+
 }
 
 .inscrire{
@@ -147,16 +143,12 @@ input {
 }
 
 .boutonderecherche {
-    border: solid;
     border-radius: 0px 18px 18px 0;
     padding: 15px;
     background-color: #0065FC;
     color: white;
-    margin-left: -47px;
-}
-.loupelogo
-{
-  border-radius: 0px 15px 15px 0px;
+    position: relative;
+    right: 43px;
 }
 
 .loupelogo i{
@@ -509,9 +501,6 @@ footer {
   H3{
     font-size:16PX
   }
-  body {
-    margin: 0;
-  }
 
   /* HEADER */
 
@@ -519,19 +508,23 @@ footer {
       margin: 0;
       width: 100%;
       padding-left: 5px;
-  }  
+  }
+
   .containerheader
   {
     display: grid;
     padding-top: 5px;
   }
-
+.headernav
+{
+  margin-right:0 ;
+}
   /* HEADER MENU */
 
   .inscrire
   {
     POSITION: ABSOLUTE;
-    TOP: 32PX;
+    TOP: 29PX;
     RIGHT: 30PX;
   }
  
@@ -541,19 +534,20 @@ footer {
      justify-content: space-around;
      align-items: center;
      width: 100%;
+     margin-top: 2PX;
   }
   nav ul {
 
     border-bottom: 2px solid #F2F2F2;
-    width: 100%;
-    padding-bottom: 5px;
 }
-
+header ul li {
+  margin-left: 0;
+  PADDING: 10PX 46PX 5PX 46PX;
+}  
 header ul li a:hover {
   border-bottom: 2px solid #0065FC;
   border-top: none;
-  padding-bottom: 5px;
-  
+  padding-bottom: 5px; 
 }
 
 /* PARAMETRES DU DISPLAY BOUTON LOUPE */
@@ -565,8 +559,8 @@ header ul li a:hover {
   background-color: #0065FC;
   padding: 18px;
   border-radius: 18px;
-  border-left: -47px;
-  margin: -51px;
+  position: relative;
+  right: 52px;
 }
 .boutonderecherche{
   display: none;
@@ -641,6 +635,7 @@ header ul li a:hover {
   padding: 0;
   order: 1;
   display: grid;
+  border-radius: 0;
 }
 
 /* PARAMETRES ACTIVITES */
@@ -648,12 +643,16 @@ header ul li a:hover {
 .containerActivites
 {
   display: grid;
-  height: auto;
-  margin-bottom: 35px;
+height: auto;
+margin-bottom: 25px;
+justify-content: normal;
+-moz-margin-start: -60px;
+
 }
 .blocActivite
 {
   width: auto;
+
 }
 .Activite img {
   width: 100%;
@@ -663,7 +662,9 @@ header ul li a:hover {
 {
   margin-bottom: 30%;
   height: 70PX;
+  -moz-margin-start: 62px;
 }
+
 .nomactivite{
 padding: 8px 0px 5px 20px;
     border-radius: 0 0 1.25rem 1.25rem;
@@ -748,6 +749,7 @@ padding: 8px 0px 5px 20px;
     left: 50%;
     transform: translateX(-50%); /*centré dans l'élément parent*/
     margin-bottom: 20px;
+    border-radius: 0;
 } 
   /* PARAMETRES HEBERGEMENTS POPULAIRES */
 
@@ -757,6 +759,10 @@ padding: 8px 0px 5px 20px;
   left: 50%;
   transform: translateX(-50%); 
   display: grid;
+}
+footer
+{
+  border-radius: 0;
 }
 
 }

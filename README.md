@@ -10,14 +10,6 @@ Second projet de la formation "Développeur web" chez OpenClassroom. L'objectif 
 •	 Les filtres ne seront pas fonctionnels pour cette version, en revanche, il faut qu’ils changent d’apparence au survol.
 
 •	 Dans le menu, les liens “Hébergements” et “Activités” sont des ancres qui doivent mener aux sections de la page.
-    Contraintes techniques
-•	 Deux maquettes : l’une desktop et l’autre mobile. Le site devra également être adapté aux tablettes.
-
-•	 Choisir le format le plus adapté par rapport à la résolution et au temps de chargement.
-
-•	 Les icônes proviennent de la bibliothèque Font Awesome. Les couleurs de la charte sont le bleu #0065FC, et sa version plus claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.
-
-•	 La police du site est Raleway.
 
 ## Les contraintes techniques
 
@@ -43,6 +35,25 @@ Second projet de la formation "Développeur web" chez OpenClassroom. L'objectif 
 
 •	 Versionner le code avec Git puis le déployer sur la page  GitHub Pages ou GitLab 
 
+## Notes sur la réalisation
+
+La maquette a été délimité  en différentes parties via les balises sémantiques afin de structurer la page (des notes additionnelles sont disponible aussi bien dans le HTML que dans le CSS afin de faciliter la lecture).
+
+**1** Les balises de délimitations de zone dans une page :
+
+L'entête du site avec HEADER, le menu de navigation avec NAV, le contenu principal avec MAIN, les contenu indépendants avec ARTICLES, les balises SECTION pour un découpage plus précis, le pied de page avec FOOTER.
+
+**2** les balises de balisage de contenu :
+
+Les balises standards comme les balises <p>, <a>, <ul>, <strong> etc…
+
+
+Enfin, le responsive a été intégré directement dans le fichier CSS "reservia.css"
+
+La version du projet a été réalisée en partie sur le navigateur Chrome.
+
+Le code ne contient aucune erreur au validateur W3C HTML et CSS.
+
 ## Notes sur l'utilisation de mes outils
 
-Pour ce projet, j'ai donc utilisé l'éditeur **VISUAL STUDIO CODE**, le plugin **LIVE SERVER**, **PRETTIER**
+Pour ce projet, j'ai utilisé l'éditeur **VISUAL STUDIO CODE**, les plugins **LIVE SERVER**, **PRETTIER** , **GITHUB** et son terminal de commande **GITBASH**.
