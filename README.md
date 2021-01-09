@@ -42,7 +42,7 @@ Le site respecte bien les fonctionnalités et les contraintes techniques pour l'
 
 Afin de faciliter le code, la maquette a été délimité en différentes parties via les balises sémantiques afin de structurer la page (des notes additionnelles sont disponible aussi bien dans le HTML que dans le CSS afin de faciliter la lecture).
 
-[**1)** Les balises de délimitations de zone dans la page :
+[ **1)** Les balises de délimitations de zone dans la page :
 
 L'entête du site avec HEADER, le menu de navigation avec NAV, le contenu principal avec MAIN, les contenu indépendants avec ARTICLES, les balises SECTION pour un découpage plus précis, le pied de page avec FOOTER.
 
