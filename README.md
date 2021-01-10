@@ -50,13 +50,15 @@ L'entête du site avec HEADER, le menu de navigation avec NAV, le contenu princi
 
 Les balises standards comme les balises P, A, UL, STRONG etc…]
 
-Le code a été versionner sur GIT et déployé sur GITHUB a l'addresse suivante https://mlgdam.github.io/Reservia/
 
-Enfin, le responsive a été intégré directement dans le fichier CSS "reservia.css"
+A noter que le responsive a été intégré directement dans le fichier CSS "reservia.css"
 
 La version du projet a été réalisée en partie sur le navigateur Chrome.
 
 Le code ne contient aucune erreur au validateur W3C HTML et CSS.
+
+Le code a été versionner sur GIT et déployé sur GITHUB a l'addresse suivante https://mlgdam.github.io/Reservia/
+
 
 ## Notes sur l'utilisation de mes outils
 
