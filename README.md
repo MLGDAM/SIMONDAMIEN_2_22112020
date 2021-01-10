@@ -57,7 +57,7 @@ La version du projet a été réalisée en partie sur le navigateur Chrome.
 
 Le code ne contient aucune erreur au validateur W3C HTML et CSS.
 
-Le code a été versionner sur GIT et déployé sur GITHUB a l'addresse suivante https://mlgdam.github.io/Reservia/
+Le code a été versionner sur GIT et déployé sur GITHUB a l'addresse suivante https://mlgdam.github.io/SIMONDAMIEN_2_22112020/
 
 
 ## Notes sur l'utilisation de mes outils
